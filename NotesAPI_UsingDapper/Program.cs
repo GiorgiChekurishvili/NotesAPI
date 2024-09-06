@@ -40,7 +40,10 @@ builder.Services.AddSwaggerGen(options =>
         }
     });
 });
-
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+    options.Configuration = builder.Configuration.GetConnectionString("Redis");
+});
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {
