@@ -34,6 +34,7 @@ NotesAPI is a web API for managing notes, including creating, reading, updating,
 - Redis
 - SQL Server
 - Swagger
+- AutoMapper
 
 ## Getting Started
 
