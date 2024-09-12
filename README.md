@@ -87,15 +87,16 @@ dotnet run
 ```
 ## API Endpoints
 ### Authentication
-- POST `/api/auth/register`: Register a new user.
-- POST `/api/auth/login`: Log in with JWT authentication.
+- POST `/api/Authentication/register`: Register a new user.
+- POST `/api/Authentication/login`: Log in with JWT authentication.
+  
 ### Notes
-- GET `/api/notes`: Retrieve a list of notes.
-- GET `/api/notes/{id}`: Retrieve note details by ID.
-- POST `/api/notes`: Create a new note.
-- PUT `/api/notes/{id}`: Update a note by ID.
-- DELETE `/api/notes/{id}`: Delete a note by ID.
-- 
+- GET `/api/Notes/readallnotes`: Retrieve a list of notes.
+- GET `/api/Notes/readnotesbyid/{id}`: Retrieve note details by ID.
+- POST `/api/Notes/createnote`: Create a new note.
+- PUT `/api/Notes/updatenote/{id}`: Update a note by ID.
+- DELETE `/api/Notes/deletenote/{id}`: Delete a note by ID.
+  
 ## Caching
 The application utilizes Redis for caching note data to improve performance.
 
